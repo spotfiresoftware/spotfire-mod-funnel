@@ -1,0 +1,9 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["/mod-manifest.json"],
+            "url": "./spotfire/mod-schema.json"
+        }
+    ],
+    "svg.preview.background": "editor"
+}

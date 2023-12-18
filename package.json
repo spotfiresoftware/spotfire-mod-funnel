@@ -1,0 +1,28 @@
+{
+    "name": "funnel-chart-mod",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "server": "mods-dev-server dist",
+        "build": "npm run ts && gulp build --compress",
+        "build-watch": "gulp watch",
+        "start": "npm run ts && npm run build-watch",
+        "test": "vitest --environment=happy-dom",
+        "test:ci": "vitest run --environment=happy-dom",
+        "ts-watch": "tsc --watch",
+        "ts": "tsc"
+    },
+    "author": "objerke",
+    "license": "ISC",
+    "devDependencies": {
+        "@spotfire/mods-dev-server": "^1.0.1",
+        "@types/d3": "^7.4.3",
+        "d3": "^7.8.5",
+        "esbuild": "^0.19.8",
+        "gulp": "^4.0.2",
+        "happy-dom": "^12.10.3",
+        "preact": "10.7.1",
+        "typescript": "^5.3.2",
+        "vitest": "^0.34.6"
+    }
+}

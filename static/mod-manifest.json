@@ -1,0 +1,94 @@
+{
+    "apiVersion": "1.3",
+    "version": "1.0",
+    "name": "Funnel Chart",
+    "id": "funnel-chart-mod",
+    "icon": "icon.svg",
+    "properties": [
+        {
+            "defaultValue": false,
+            "name": "rounded",
+            "type": "boolean"
+        },
+        {
+            "defaultValue": "right",
+            "name": "labelPosition",
+            "type": "string"
+        },
+        {
+            "defaultValue": "all",
+            "name": "labels",
+            "type": "string"
+        },
+        {
+            "defaultValue": "all",
+            "name": "renderValues",
+            "type": "string"
+        },
+        {
+            "defaultValue": "inside",
+            "name": "valuePosition",
+            "type": "string"
+        },
+        {
+            "defaultValue": false,
+            "name": "showDepth",
+            "type": "boolean"
+        },
+        {
+            "defaultValue": 5,
+            "name": "depth",
+            "type": "integer"
+        },
+        {
+            "defaultValue": 3,
+            "name": "distance",
+            "type": "integer"
+        },
+        {
+            "defaultValue": 10,
+            "name": "angle",
+            "type": "integer"
+        },
+        {
+            "defaultValue": false,
+            "name": "showPercent",
+            "type": "boolean"
+        }
+    ],
+    "dataViewDefinition": {
+        "tooltip": {
+            "enabled": true
+        },
+        "colorAxis": {
+            "mode": "dual",
+            "dropTarget": {
+                "icon": "Color",
+                "description": "Color by {0}"
+            }
+        },
+        "axes": [
+            {
+                "name": "Funnel",
+                "mode": "categorical",
+                "placement": "left",
+                "dropTarget": {
+                    "icon": "Tile",
+                    "description": "Use {0} on the mod's Funnel-axis"
+                }
+            },
+            {
+                "name": "Value",
+                "mode": "continuous",
+                "allowMultipleMeasures": false,
+                "placement": "bottom",
+
+                "dropTarget": {
+                    "icon": "YAxis",
+                    "description": "Use {0} on the mod's Value-axis"
+                }
+            }
+        ]
+    },
+    "files": ["index.html", "main.css", "bundle.js"]
+}

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "jsxFactory": "h",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "allowJs": false,
+        "allowUnreachableCode": false,
+        "noEmit": true,
+        "noImplicitAny": true,
+        "strict": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "inlineSources": true,
+        "module": "ES2022",
+        "skipLibCheck": true,
+        "outDir": "./build/",
+        "lib": ["es2019", "dom"],
+        "baseUrl": ".",
+        "typeRoots": ["./spotfire", "./node_modules/@types"]
+    },
+    "include": ["./src/**/*.ts", "./src/**/*.tsx", "./tests/**/*.ts", "./spotfire/**/*.d.ts"],
+    "exclude": ["../node_modules"]
+}
