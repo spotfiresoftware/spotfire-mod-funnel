@@ -1,35 +1,41 @@
-# Funnel chart mod
+# Funnel Chart Mod for Spotfire®
 
-## Bundle for production
+<img src="assets/Funnel.png" width="60%"/>
 
-The build task will create an compressed JavaScript bundle.
+Display streamlined data; each slice in the funnel representing a process that has filtered out data.
 
-```
-npm ci
-```
+## Installation & Use
 
-```
-npm run build
-```
+[Download latest version](https://github.com/spotfiresoftware/spotfire-mod-funnel/releases)
+
+The [Wiki](https://github.com/spotfiresoftware/spotfire-mod-funnel/wiki) contains step-by-step instruction on how to install and use this Mod in Spotfire®.
+
+## Building the Project
+
+The build task will create an compressed JavaScript bundle. 
+
+In a terminal window:
+- `npm ci`
+- `npm run build`
 
 The funnel chart will be found under `dist`.
 
-## Bundle for production
+### Bundle for production
 
 The `build-watch` task will create an uncompressed JavaScript bundle to simplify development and debugging. When the mod is ready to be saved into the analysis file the JavaScript bundle should be compressed. By invoking `npm run build`, `esbuild` will create a minified bundle.
 
-```
-npm ci
-```
+In a terminal window:
+- `npm ci`
+- `npm run build-watch`
 
-```
-npm run build-watch
-```
+In a new terminal window:
+- `npm run server`
 
-```
-npm run server
-```
-
-## Unit tests
+### Unit tests
 
 Invoking `npm test` will start a test runner.
+
+## About Mods for Spotfire®
+-   [TIBCO Community Exchange](https://community.tibco.com/s/global-search/%40uri#q=mod%20for%20tibco%20spotfire&t=Exchange&sort=date%20descending): A safe and trusted place to discover ready-to-use mods
+-   [Developer documentation](https://spotfiresoftware.github.io/spotfire-mods/docs/): Introduction and tutorials for mods developers
+-   [Mods examples](https://github.com/TIBCOSoftware/spotfire-mods/): A public repository for examples projects
